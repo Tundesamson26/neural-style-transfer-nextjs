@@ -108,6 +108,20 @@
   margin-left: 0.5rem;
 }
 
+.images {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 2.5em;
+}
+.imagesBox{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

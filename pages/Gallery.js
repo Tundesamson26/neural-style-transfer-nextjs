@@ -4,7 +4,8 @@ import { Image, Transformation, CloudinaryContext } from "cloudinary-react";
 
 import images from "../data/images.json";
 
-export default function Home() {
+export default function Gallery() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +20,7 @@ export default function Home() {
             return (
               <li key={image.id}>
                 <div className={styles.images}>
-                  <CloudinaryContext cloudName="demo">
+                  <CloudinaryContext cloudName="demo" >
                     <Image
                       publicId="cld-sample"
                       alt="profile"
